@@ -23,19 +23,19 @@ retriever = EmbeddingRetriever(
     model_format="sentence_transformers"
 )
 
-# preprocessor = PreProcessor(
-#     clean_whitespace=True,
-#     clean_header_footer=True,
-#     clean_empty_lines=True,
-#     split_by="word",
-#     split_length=200,
-#     split_overlap=20,
-#     split_respect_sentence_boundary=True,
-# )
+preprocessor = PreProcessor(
+    clean_whitespace=True,
+    clean_header_footer=True,
+    clean_empty_lines=True,
+    split_by="word",
+    split_length=200,
+    split_overlap=20,
+    split_respect_sentence_boundary=True,
+)
 
-# reader = FARMReader(
-#     model_name_or_path='deepset/electra-base-squad2', 
-#     use_gpu=True
-# )
+reader = FARMReader(
+    model_name_or_path='deepset/electra-base-squad2', 
+    use_gpu=True
+)
 
 # generator = Seq2SeqGenerator(model_name_or_path="vblagoje/bart_lfqa")
