@@ -6,7 +6,7 @@ querying_pipeline = ExtractiveQAPipeline(reader, retriever)
 generative_pipeline = GenerativeQAPipeline(generator, retriever)
 search_pipe = DocumentSearchPipeline(retriever)
 params = {
-    "Retriever": {"top_k": 3},
+    "Retriever": {"top_k": 5},
 }
 
 def queryDocuments(input):
