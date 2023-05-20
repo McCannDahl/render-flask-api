@@ -5,10 +5,8 @@ except:
 import os
 from flask import Flask, request, jsonify
 from query import queryDocuments, queryExtractive, queryGenerative
-from flask_cors import CORS
 
 app = Flask(__name__)
-cors = CORS(app)
 
 @app.route('/')
 def hello_world():
