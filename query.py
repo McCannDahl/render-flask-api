@@ -1,6 +1,6 @@
 
 # from haystack.pipelines import ExtractiveQAPipeline, DocumentSearchPipeline, GenerativeQAPipeline
-# from shared import reader, retriever, generator
+from shared import retriever #, reader, generator
 
 # querying_pipeline = ExtractiveQAPipeline(reader, retriever)
 # generative_pipeline = GenerativeQAPipeline(generator, retriever)

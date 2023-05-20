@@ -9,19 +9,19 @@ APIKEY = os.environ['APIKEY']
 pineconeIndex = 'lds-test'
 pineconeEnv = "asia-southeast1-gcp-free"
 
-# document_store = PineconeDocumentStore(
-#     APIKEY,
-#     environment=pineconeEnv,
-#     similarity="cosine",
-#     index=pineconeIndex,
-#     embedding_dim=384,
-# )
+document_store = PineconeDocumentStore(
+    APIKEY,
+    environment=pineconeEnv,
+    similarity="cosine",
+    index=pineconeIndex,
+    embedding_dim=384,
+)
 
-# retriever = EmbeddingRetriever(
-#     document_store=document_store,
-#     embedding_model="multi-qa-MiniLM-L6-cos-v1",
-#     model_format="sentence_transformers"
-# )
+retriever = EmbeddingRetriever(
+    document_store=document_store,
+    embedding_model="multi-qa-MiniLM-L6-cos-v1",
+    model_format="sentence_transformers"
+)
 
 # preprocessor = PreProcessor(
 #     clean_whitespace=True,
