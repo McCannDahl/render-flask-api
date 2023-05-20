@@ -1,3 +1,4 @@
 Flask
 Gunicorn
-farm-haystack
+farm-haystack[pinecone]
+flask-cors
